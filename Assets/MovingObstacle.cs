@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 public class ClickAndDragWithDynamics : MonoBehaviour
 {
     public Rigidbody2D selectedObject;
@@ -27,16 +28,24 @@ public class ClickAndDragWithDynamics : MonoBehaviour
         }
         if (Input.GetMouseButtonUp(0) && selectedObject)
         {
-            selectedObject.velocity = Vector2.zero;
-            selectedObject.AddForce(mouseForce, ForceMode2D.Impulse);
+            if (selectedObject.name == "Obstacle"){
+                selectedObject.velocity = Vector2.zero;
+                selectedObject.AddForce(mouseForce, ForceMode2D.Impulse);
+                    
+            }
             selectedObject = null;
+            
         }
     }
     void FixedUpdate()
     {
         if (selectedObject)
         {
-            selectedObject.MovePosition(mousePosition + offset);
+            if (selectedObject.name == "Obstacle")
+            {
+                selectedObject.MovePosition(mousePosition + offset);
+            }
+            
         }
     }
 }
