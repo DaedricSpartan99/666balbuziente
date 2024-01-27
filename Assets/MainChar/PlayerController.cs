@@ -20,9 +20,14 @@ public class PlayerController : MonoBehaviour
     private float timeLastKeyWasPressed;
     private float timeLastKeyWasPressedJump;
 
+    public AudioClip[] playerAudioTracks;
+
+    private AudioSource audioSource;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -67,6 +72,8 @@ public class PlayerController : MonoBehaviour
 
     void MoveCharacterJump()
     {
+        audioSource.clip=playerAudioTracks[0];
+        audioSource.Play();
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
     }
 
@@ -97,6 +104,9 @@ public class PlayerController : MonoBehaviour
 
     void MoveCharacter()
     {
+        audioSource.clip=playerAudioTracks[1];
+        audioSource.Play();
+        
         rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
     }
 
