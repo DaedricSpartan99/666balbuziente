@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - KillerArea
+  - Cacca
   layers:
   - Default
   - TransparentFX
