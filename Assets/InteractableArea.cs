@@ -13,6 +13,7 @@ public class InteractableArea : MonoBehaviour
             {
                 Instantiate(other.gameObject.GetComponent<ClickAndDragWithDynamics>().generateInIteractableAreas, transform.position, Quaternion.identity);
                 Destroy(other.gameObject);
+                GetComponent<Collider2D>().enabled = false;
             }
         }
     }
