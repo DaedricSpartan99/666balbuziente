@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 4249977910995248963}
   - component: {fileID: 2350212543196823870}
   - component: {fileID: 5358870635291047044}
-  - component: {fileID: -2582124168595329834}
+  - component: {fileID: 1804893169393262544}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -215,7 +215,9 @@ MonoBehaviour:
   allowedTimeBetweenKeys: 0.3
   playerAudioTracks:
   - {fileID: 8300000, guid: 84d228f029c9544d4ab01e7c51692fe0, type: 3}
---- !u!82 &-2582124168595329834
+  - {fileID: 8300000, guid: a7f5bf3bcc222420b90ebcb03f469f8e, type: 3}
+  - {fileID: 8300000, guid: fa460c632c0b6431cb0e45685c921813, type: 3}
+--- !u!82 &1804893169393262544
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -225,8 +227,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 84d228f029c9544d4ab01e7c51692fe0, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

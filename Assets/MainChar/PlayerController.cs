@@ -114,7 +114,10 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("KillerArea"))
         {
+            audioSource.clip=playerAudioTracks[2];
+            audioSource.Play();
             Debug.Log("Morto");
+            
             string currentSceneName = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene(currentSceneName);
         }
