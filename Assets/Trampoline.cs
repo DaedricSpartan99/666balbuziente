@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.VisualScripting;
 public class Trampoline : MonoBehaviour {
-	public float springForce = 1000;
+	public float springForce;
 	private Collision2D collision;
 	private bool bouncing = false;
 	private bool clickStatus = false;
