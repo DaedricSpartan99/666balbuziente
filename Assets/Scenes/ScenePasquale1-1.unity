@@ -223,7 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38cf8bcac218ed348bfe45959a3c0110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNameToLoad: ScenePasquale2
+  sceneNameToLoad: ScenePasquale1-2
 --- !u!61 &580859339
 BoxCollider2D:
   m_ObjectHideFlags: 0
