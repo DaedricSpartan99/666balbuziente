@@ -724,7 +724,7 @@ GameObject:
   - component: {fileID: 1269937503}
   - component: {fileID: 1269937502}
   - component: {fileID: 1269937501}
-  - component: {fileID: 1269937500}
+  - component: {fileID: 1269937504}
   m_Layer: 5
   m_Name: Home
   m_TagString: Untagged
@@ -752,19 +752,6 @@ RectTransform:
   m_AnchoredPosition: {x: -18.795776, y: -94.053986}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1269937500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269937498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7af9a2a16f68d347b6fc6cded11e5ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nome: {fileID: 0}
 --- !u!114 &1269937501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -808,19 +795,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1269937502}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11500000, guid: f7af9a2a16f68d347b6fc6cded11e5ed, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1269937502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -859,6 +834,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269937498}
   m_CullTransparentMesh: 1
+--- !u!114 &1269937504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269937498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83bcc1015c91f9f4b9bfe97dc03e169d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avanti: {fileID: 886644407}
+  indietro: {fileID: 1159998610}
 --- !u!1 &1356298311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1713,7 +1702,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7af9a2a16f68d347b6fc6cded11e5ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nome: {fileID: 886644407}
+  avanti: {fileID: 0}
+  indietro: {fileID: 0}
 --- !u!1 &1773233844
 GameObject:
   m_ObjectHideFlags: 0
