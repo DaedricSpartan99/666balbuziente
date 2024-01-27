@@ -10,6 +10,7 @@ public class ClickAndDragWithDynamics : MonoBehaviour
     public float maxSpeed=10;
     Vector2 mouseForce;
     Vector3 lastPosition;
+    public bool draggable = true;
     void Update()
     {
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -19,7 +20,7 @@ public class ClickAndDragWithDynamics : MonoBehaviour
             mouseForce = Vector2.ClampMagnitude(mouseForce, maxSpeed);
             lastPosition = mousePosition;
         }
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && draggable)
         {
             Collider2D targetObject = Physics2D.OverlapPoint(mousePosition);
             if (targetObject)
