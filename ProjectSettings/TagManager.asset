@@ -7,6 +7,9 @@ TagManager:
   - Obstacle
   - KillerArea
   - Cacca
+  - Ticinesi
+  - Credits
+  - Home
   layers:
   - Default
   - TransparentFX

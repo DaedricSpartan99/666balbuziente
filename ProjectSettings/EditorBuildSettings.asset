@@ -9,12 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/ScenePasquale1.unity
+    path: Assets/Scenes/ScenePasquale1-1.unity
     guid: ca9607557b84b5846aa40f607aab0cbb
   - enabled: 1
-    path: Assets/Scenes/ScenePasquale2.unity
+    path: Assets/Scenes/ScenePasquale1-2.unity
     guid: a5fe6e327edd10f498f430ece17bd405
   - enabled: 1
-    path: Assets/Scenes/ScenePasquale3.unity
+    path: Assets/Scenes/ScenePasquale1-3.unity
     guid: 380dd6e639cec744ca30a712fd60f507
   m_configObjects: {}
