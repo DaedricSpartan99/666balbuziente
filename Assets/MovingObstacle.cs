@@ -1,8 +1,10 @@
 using UnityEngine;
 using System.Collections;
+using UnityEditor.UI;
 public class ClickAndDragWithDynamics : MonoBehaviour
 {
     public Rigidbody2D selectedObject;
+    public GameObject generateInIteractableAreas;
     Vector3 offset;
     Vector3 mousePosition;
     public float maxSpeed=10;
@@ -23,14 +25,18 @@ public class ClickAndDragWithDynamics : MonoBehaviour
             if (targetObject)
             {
                 selectedObject = targetObject.transform.gameObject.GetComponent<Rigidbody2D>();
-                offset = selectedObject.transform.position - mousePosition;
+                if (selectedObject == gameObject.GetComponent<Rigidbody2D>()){
+                    offset = selectedObject.transform.position - mousePosition;
+                    gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+                }
             }
         }
         if (Input.GetMouseButtonUp(0) && selectedObject)
         {
-            if (selectedObject.name == "Obstacle"){
+            if (selectedObject == gameObject.GetComponent<Rigidbody2D>()){
                 selectedObject.velocity = Vector2.zero;
                 selectedObject.AddForce(mouseForce, ForceMode2D.Impulse);
+                gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
                     
             }
             selectedObject = null;
@@ -41,7 +47,7 @@ public class ClickAndDragWithDynamics : MonoBehaviour
     {
         if (selectedObject)
         {
-            if (selectedObject.name == "Obstacle")
+            if (selectedObject == gameObject.GetComponent<Rigidbody2D>())
             {
                 selectedObject.MovePosition(mousePosition + offset);
             }
