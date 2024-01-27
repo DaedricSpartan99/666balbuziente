@@ -1,4 +1,6 @@
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -96,6 +98,16 @@ public class PlayerController : MonoBehaviour
     void MoveCharacter()
     {
         rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("KillerArea"))
+        {
+            Debug.Log("Morto");
+            string currentSceneName = SceneManager.GetActiveScene().name;
+            SceneManager.LoadScene(currentSceneName);
+        }
     }
 }
 
