@@ -8,6 +8,8 @@ TagManager:
   - KillerArea
   - Cacca
   - Ticinesi
+  - Credits
+  - Home
   layers:
   - Default
   - TransparentFX
