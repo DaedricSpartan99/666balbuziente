@@ -1,7 +1,8 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using System.Collections; 
+using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
@@ -114,16 +115,22 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("KillerArea"))
         {
-            audioSource.clip=playerAudioTracks[2];
-            audioSource.Play();
-            Debug.Log("Morto");
-            
-            string currentSceneName = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene(currentSceneName);
+            GameOver();
         }
     }
-}
 
+
+    void GameOver(){
+        audioSource.clip=playerAudioTracks[2];
+        audioSource.Play();
+        Debug.Log("Morto");
+        SceneManager.LoadScene("GameOverScene");
+
+
+     
+    }
+
+}
 
 
     
