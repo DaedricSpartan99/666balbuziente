@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NewBehaviourScript2 : MonoBehaviour
+public class NewBehaviourScript : MonoBehaviour
 {
     public GameObject avanti;
     public GameObject indietro;
@@ -14,9 +14,9 @@ public class NewBehaviourScript2 : MonoBehaviour
         b.onClick.AddListener(
             () =>
             {
-                Debug.Log("1");
-                avanti.transform.Translate(-677f, 0f, 0f);
-                indietro.transform.Translate(-677f, 0f, 0f);
+                Debug.Log("2");
+                avanti.transform.Translate(750f, 0f, 0f);
+                indietro.transform.Translate(750f, 0f, 0f);
             }
         );
     }
