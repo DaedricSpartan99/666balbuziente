@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ScenePasquale1-3.unity
     guid: 380dd6e639cec744ca30a712fd60f507
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: a67294c1d2643479d82254654c28c14b
+  - enabled: 1
+    path: Assets/Scenes/TestZeno.unity
+    guid: dfecbd89dd9f41d2c896202d16c6d807
   m_configObjects: {}
