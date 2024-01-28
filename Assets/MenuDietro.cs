@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NewBehaviourScript : MonoBehaviour
+public class NewBehaviourScript2 : MonoBehaviour
 {
-    public GameObject nome;
+    public GameObject avanti;
+    public GameObject indietro;
 
     void Start()
     {
@@ -14,7 +15,8 @@ public class NewBehaviourScript : MonoBehaviour
             () =>
             {
                 Debug.Log("1");
-                nome.transform.Translate(677f, 0f, 0f);
+                avanti.transform.Translate(-750f, 0f, 0f);
+                indietro.transform.Translate(-750f, 0f, 0f);
             }
         );
     }
