@@ -21,8 +21,6 @@ public class GlobalVariables : MonoBehaviour
         {
             Destroy(gameObject); // Ensures that there's only one instance of this GameObject.
         }
-        Debug.Log("load first scene");
-        SceneManager.LoadScene("LivelloPolotti"); //load the first level
     }
     
 }

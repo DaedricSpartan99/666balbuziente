@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class NewBehaviourScript2 : MonoBehaviour
@@ -15,8 +16,8 @@ public class NewBehaviourScript2 : MonoBehaviour
             () =>
             {
                 Debug.Log("1");
-                avanti.transform.Translate(-2000f, 0f, 0f);
-                indietro.transform.Translate(-2000f, 0f, 0f);
+                avanti.SetActive(false);
+                indietro.SetActive(true);
             }
         );
     }

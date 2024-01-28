@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class NewBehaviourScript : MonoBehaviour
+public class NewBehaviourScript3 : MonoBehaviour
 {
-    public GameObject avanti;
-    public GameObject indietro;
+
 
     void Start()
     {
@@ -15,9 +14,7 @@ public class NewBehaviourScript : MonoBehaviour
         b.onClick.AddListener(
             () =>
             {
-                Debug.Log("2");
-                avanti.SetActive(false);
-                indietro.SetActive(true);
+                SceneManager.LoadScene("LivelloPolotti"); 
             }
         );
     }

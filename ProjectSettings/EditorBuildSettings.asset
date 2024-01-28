@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/MainMenu.unity
+    guid: b9f207f5472400d4bb32f12094e42099
   - enabled: 1
     path: Assets/Scenes/ScenePasquale1-1.unity
     guid: ca9607557b84b5846aa40f607aab0cbb
@@ -20,9 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOverScene.unity
     guid: a67294c1d2643479d82254654c28c14b
-  - enabled: 1
-    path: Assets/Scenes/TestZeno.unity
-    guid: dfecbd89dd9f41d2c896202d16c6d807
   - enabled: 1
     path: Assets/Scenes/LivelloPolotti.unity
     guid: 9600a291baf19b2d59a6614d3de17cc3
