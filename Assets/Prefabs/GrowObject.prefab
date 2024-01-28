@@ -171,5 +171,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d271f5582d84a4a84e7c540ee040b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  growthAmount: 4
+  growthAmount: 3
   growthDuration: 5
