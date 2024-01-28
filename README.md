@@ -1,5 +1,6 @@
 This is a game about a bug riding a skateboard
 Created during the 2024 Global Game Jam on the site of Mendrisio
+With this game we won the award for best game created during the 2024 Global Game Jam 
 
 Credits:
 fracal          2D Art and Audio
@@ -9,4 +10,4 @@ Kual            Game design and Game development
 Zebi            Game design and Game development
 Istorn          Game design and Game development
 Atlas97         Audio, Music, Game design and Game development
-le0n_ros        Game design and Game development
+le0n_ros        Game design and Game developments 
