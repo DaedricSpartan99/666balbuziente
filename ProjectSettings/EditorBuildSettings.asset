@@ -21,9 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/GameOverScene.unity
     guid: a67294c1d2643479d82254654c28c14b
   - enabled: 1
-    path: Assets/Scenes/LivelloPolotti.unity
-    guid: 9600a291baf19b2d59a6614d3de17cc3
-  - enabled: 1
-    path: Assets/Scenes/LivelloFinale.unity
-    guid: 88233af1be1c9d38e875abeb84843d3a
+    path: Assets/Scenes/TestZeno.unity
+    guid: dfecbd89dd9f41d2c896202d16c6d807
   m_configObjects: {}
