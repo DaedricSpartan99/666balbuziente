@@ -165,4 +165,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a35cffb4f2c14f1e997d7e52665e37a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  springForce: 1000
+  springForce: 1100
