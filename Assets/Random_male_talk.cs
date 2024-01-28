@@ -36,7 +36,7 @@ public class Random_male_talk : MonoBehaviour
         }
 
         if (toFlip) {
-          toFlip.GetComponent<SpriteRenderer>().flipX = false;
+          toFlip.GetComponent<SpriteRenderer>().flipX = !toFlip.GetComponent<SpriteRenderer>().flipX;
         }
     }
 }
