@@ -12,8 +12,8 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     public Transform groundCheck;
     public LayerMask groundLayer;
-    private KeyCode[] keySequence = new KeyCode[] { KeyCode.A, KeyCode.S, KeyCode.D };
-    private KeyCode[] keySequenceJump = new KeyCode[] { KeyCode.N, KeyCode.J };
+    private KeyCode[] keySequence = new KeyCode[] { KeyCode.A };
+    private KeyCode[] keySequenceJump = new KeyCode[] { KeyCode.N };
     private int currentIndex = 0; // Indice corrente nella sequenza di tasti
     private int currentIndexJump = 0; // Indice corrente nella sequenza di tasti
 
