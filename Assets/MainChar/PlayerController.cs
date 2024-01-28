@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
     private KeyCode[] keySequence = new KeyCode[] { KeyCode.A, KeyCode.S, KeyCode.D };
-    private KeyCode[] keySequenceJump = new KeyCode[] { KeyCode.N, KeyCode.J, KeyCode.I };
+    private KeyCode[] keySequenceJump = new KeyCode[] { KeyCode.N, KeyCode.J };
     private int currentIndex = 0; // Indice corrente nella sequenza di tasti
     private int currentIndexJump = 0; // Indice corrente nella sequenza di tasti
 
