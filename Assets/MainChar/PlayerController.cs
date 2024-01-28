@@ -34,6 +34,12 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        // Check if the player si vuole killare il selfo
+
+        if (Input.GetKeyDown(KeyCode.R) ){
+            GameOver();
+        }
+
         // Check if the player is grounded
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
         
