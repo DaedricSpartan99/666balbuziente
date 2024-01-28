@@ -1,7 +1,8 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using System.Collections; 
+using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
@@ -23,6 +24,7 @@ public class PlayerController : MonoBehaviour
     public AudioClip[] playerAudioTracks;
 
     private AudioSource audioSource;
+    public Animator animator;
 
     void Start()
     {
@@ -75,6 +77,7 @@ public class PlayerController : MonoBehaviour
         audioSource.clip=playerAudioTracks[0];
         audioSource.Play();
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        animator.SetTrigger("PlayerJump");
     }
 
     void Galoppo()
@@ -114,16 +117,22 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("KillerArea"))
         {
-            audioSource.clip=playerAudioTracks[2];
-            audioSource.Play();
-            Debug.Log("Morto");
-            
-            string currentSceneName = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene(currentSceneName);
+            GameOver();
         }
     }
-}
 
+
+    void GameOver(){
+        audioSource.clip=playerAudioTracks[2];
+        audioSource.Play();
+        Debug.Log("Morto");
+        SceneManager.LoadScene("GameOverScene");
+
+
+     
+    }
+
+}
 
 
     

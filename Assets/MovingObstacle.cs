@@ -36,7 +36,7 @@ public class ClickAndDragWithDynamics : MonoBehaviour
         {
             if (selectedObject == gameObject.GetComponent<Rigidbody2D>()){
                 selectedObject.velocity = Vector2.zero;
-                selectedObject.AddForce(mouseForce, ForceMode2D.Impulse);
+                //selectedObject.AddForce(mouseForce, ForceMode2D.Impulse);
                 gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
                     
             }

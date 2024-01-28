@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class InteractableArea : MonoBehaviour
 {
+    public GameObject mySprite;
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Obstacle"))
@@ -14,6 +15,7 @@ public class InteractableArea : MonoBehaviour
                 Instantiate(other.gameObject.GetComponent<ClickAndDragWithDynamics>().generateInIteractableAreas, transform.position, Quaternion.identity);
                 Destroy(other.gameObject);
                 GetComponent<Collider2D>().enabled = false;
+                mySprite.SetActive(false);
             }
         }
     }

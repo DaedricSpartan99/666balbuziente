@@ -133,7 +133,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1227004803483554994, guid: 72eb7e3beb11c887888c9cd800a33098, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.94
+      value: -6.4
       objectReference: {fileID: 0}
     - target: {fileID: 1227004803483554994, guid: 72eb7e3beb11c887888c9cd800a33098, type: 3}
       propertyPath: m_LocalPosition.y
@@ -374,10 +374,6 @@ PrefabInstance:
     - target: {fileID: 8838972691709891370, guid: 820d70a73da454022bfeb44e01e61bda, type: 3}
       propertyPath: m_Name
       value: SezioneBombaNucleare
-      objectReference: {fileID: 0}
-    - target: {fileID: 8838972691709891370, guid: 820d70a73da454022bfeb44e01e61bda, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8919518312175094302, guid: 820d70a73da454022bfeb44e01e61bda, type: 3}
       propertyPath: m_LocalPosition.x
