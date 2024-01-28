@@ -10,6 +10,8 @@ TagManager:
   - Ticinesi
   - Credits
   - Home
+  - StartGameBtn
+  - CreditsText
   layers:
   - Default
   - TransparentFX
