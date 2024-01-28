@@ -15,8 +15,8 @@ public class NewBehaviourScript2 : MonoBehaviour
             () =>
             {
                 Debug.Log("1");
-                avanti.transform.Translate(-750f, 0f, 0f);
-                indietro.transform.Translate(-750f, 0f, 0f);
+                avanti.transform.Translate(-2000f, 0f, 0f);
+                indietro.transform.Translate(-2000f, 0f, 0f);
             }
         );
     }
