@@ -12,6 +12,7 @@ public class Polotto : MonoBehaviour
         {
             GetComponent<Collider2D>().enabled = false;
             myCacca.SetActive(true);
+            Destroy(other.gameObject);
         }
     }
 }

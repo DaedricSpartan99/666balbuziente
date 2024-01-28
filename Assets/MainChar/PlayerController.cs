@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     public AudioClip[] playerAudioTracks;
 
     private AudioSource audioSource;
+    public Animator animator;
 
     void Start()
     {
@@ -76,6 +77,7 @@ public class PlayerController : MonoBehaviour
         audioSource.clip=playerAudioTracks[0];
         audioSource.Play();
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        animator.SetTrigger("PlayerJump");
     }
 
     void Galoppo()
