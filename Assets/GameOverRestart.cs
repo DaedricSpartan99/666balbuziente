@@ -26,8 +26,8 @@ public class GameOverRestart : MonoBehaviour
             ticinesi.color=new Color(ticinesi.color.r,ticinesi.color.g,ticinesi.color.b,1.0f);
         
         }
-        if (timer>8.0f){
-            SceneManager.LoadScene("TestZeno");
+        if (timer>5.0f){
+            SceneManager.LoadScene(GlobalVariables.Instance.lastSceneName);
         }
         
         
