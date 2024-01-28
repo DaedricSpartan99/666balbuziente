@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-using UnityEditor.UI;
+
 public class ClickAndDragWithDynamics : MonoBehaviour
 {
     public Rigidbody2D selectedObject;
