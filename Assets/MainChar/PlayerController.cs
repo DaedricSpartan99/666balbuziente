@@ -44,6 +44,11 @@ public class PlayerController : MonoBehaviour
         {
             Salto();
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     void Salto()
