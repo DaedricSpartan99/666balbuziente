@@ -8,6 +8,8 @@ public class Random_male_talk : MonoBehaviour
 
     public AudioClip[] collisionSounds;
     public float audioScale = 1.0f;
+    public GameObject comic;
+    public GameObject toFlip;
 
     AudioSource source;
 
@@ -27,6 +29,14 @@ public class Random_male_talk : MonoBehaviour
     {
         if (collider.gameObject.CompareTag("Player")) {
           source.PlayOneShot(collisionSounds[Random.Range(0, collisionSounds.Length)], audioScale);
+        }
+
+        if (comic) {
+          comic.SetActive(true);
+        }
+
+        if (toFlip) {
+          toFlip.GetComponent<SpriteRenderer>().flipX = false;
         }
     }
 }
