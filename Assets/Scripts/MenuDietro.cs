@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class NewBehaviourScript2 : MonoBehaviour
 {
@@ -16,11 +15,8 @@ public class NewBehaviourScript2 : MonoBehaviour
             () =>
             {
                 Debug.Log("1");
-                avanti.transform.Translate(-750f, 0f, 0f);
-                indietro.transform.Translate(-750f, 0f, 0f);
-                if (gameObject.tag == "StartGameBtn") {
-                    SceneManager.LoadScene("ScenePasquale1-1");
-                }
+                avanti.transform.Translate(-2000f, 0f, 0f);
+                indietro.transform.Translate(-2000f, 0f, 0f);
             }
         );
     }
